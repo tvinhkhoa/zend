@@ -126,5 +126,6 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 		
 		$frontController =& $this->_frontController;
 		$frontController->registerPlugin(new Application_Plugin_Auth());
+		return $frontController;
     }
 }
