@@ -9,7 +9,7 @@ class IndexController extends Zend_Controller_Action
 		$this->view->paginator = $common->paging($result);
 		
 //		$db =	Zend_Db::factory(
-//					'Oracle', 
+//					'ORACLE', 
 //					array(	
 //						'host' => 'localhost',
 //						'username' => 'system',
@@ -27,7 +27,7 @@ class IndexController extends Zend_Controller_Action
 //		}
 		
 		$pdo_oci = Zend_Db::factory(
-					'Pdo_Oci', 
+					'PDO_OCI', 
 					array(	
 						'host' => 'localhost',
 						'username' => 'system',

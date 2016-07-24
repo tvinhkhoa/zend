@@ -58,9 +58,11 @@ try{
 //			),
 		)
 	);
-
+	
 	$application->setOptions($application->mergeOptions($application->getOptions(), $options));
 	$application->bootstrap()->run();
+	var_dump(debug_backtrace());
+	debug_print_backtrace();
 } catch(Exception $exception) {
 	
 	echo '<html><body><center>'
